@@ -1,0 +1,134 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 50px;
+    min-width: 300px;
+    padding: 0px;
+  }
+  
+.hero #hero-img {
+    display: block;
+    max-width: 1200px;
+}
+  
+.hero-content {
+    min-width: 200px;
+    width: 750px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+  
+.hero-content h1 {
+    font-size: 2.5em;
+    
+}
+  
+.hero-content p {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+  
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fe4d4d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    min-width: 44px;
+    min-height: 44px;
+}
+  
+.btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 1199.98px) {
+    #hero-img {
+      width: 100%; /* Tampilkan full-width */
+    }
+  }
+  
+  /* Media Queries untuk layar dengan lebar minimal 1200px */
+  @media screen and (min-width: 1200px) {
+    #hero-img {
+      min-width: 100%; /* Tampilkan minimal dengan width 1000px */
+      width: auto; /* Biarkan lebar mengikuti ukuran aslinya */
+    }
+    .hero-content{
+        width: 600px;
+        top: 50%;
+    }
+    .hero-content h1 {
+        font-size: 2em;
+        
+    }
+    .hero-content p {
+        font-size: 1em;
+    }
+      
+    .btn {
+        font-size: 0.9em;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .hero{
+        margin-bottom: 20px;
+    }
+    .hero-content{
+        width: 500px;
+        top: 70%;
+    }
+    .hero-content h1 {
+        font-size:1.75em;
+        margin-top: 10px;
+    }
+      
+    .hero-content p {
+        font-size: 0.8em;
+    }
+      
+    .btn {
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (max-width: 500px) and (min-width: 300px) {
+    .main-content{
+        width: 100%;
+    }
+    .hero{
+        margin-top: 20px;
+    }
+    .hero-content{
+        width: 300px;
+        top: 60%;
+    }
+    .hero-content h1 {
+        font-size:1em;
+        margin-top: 10px;
+    }
+      
+    .hero-content p {
+        font-size: 0.6em;
+    }
+      
+    .btn {
+        font-size: 0.7em;
+    }
+}
+  
+  

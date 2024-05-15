@@ -1,0 +1,192 @@
+   /*
+    Main Content
+  */
+   
+main {
+  padding: 16px 16px;
+  display: fixed;
+}
+  
+.content {
+  margin: 0 auto;
+  min-height: 100%;
+  width: 350px;
+}
+  
+.content .content__heading {
+  font-weight: normal;
+}
+
+.content h2{
+  text-align: center;
+  margin-top: 70px;
+  font-weight: bold;
+}
+   
+ /*
+    Restaurant
+  */
+.restaurant-list{
+  padding-right: 16px;
+  margin: auto;
+}
+.resto {
+    position: relative;
+    min-width: 300px;
+    max-width: 1200px;
+    display: grid;
+    gap: 18px 16px;
+}
+.resto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.resto h2{
+    margin-top: 30px;
+}
+.resto .restaurant__info h4 {
+    margin: 8px 0;
+}
+.resto #restaurant__poster{
+  max-width: 900px;
+  max-height: 450px;
+  width: auto;
+  height: auto;
+}
+.resto-categories h3{
+  margin-top: 10px;
+}
+.menus{
+  top: 10px;
+  bottom: 10px;
+  text-align: center;
+ }
+.resto-menus{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.resto-foods{
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+}
+.resto-foods-item{
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.resto-drinks{
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+}
+.resto-drinks-item{
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+img #restaurant__poster{
+  display: block;
+  object-position: center;
+}
+
+.restaurant__overview p{
+  font-size: 12px;
+}
+
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+  
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.list-review-card{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.list-item-review{
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  /* box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.review-item{
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.input-review{
+  margin-top: 20px;
+}
+
+.input-review h2{
+  margin-bottom: 20px;
+}
+#addReviewForm{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.input {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  /* box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); */
+}
+
+input, textarea{
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  padding: 12px;
+}
+.review{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  min-width: 300px;
+}
+.btn-review{
+  margin-top: 20px;
+  margin-bottom: 15px;
+  background-color: #fe4d4d;
+  border: none;
+  min-height: 44px;
+  min-width: 44px;
+  width: 250px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  color: white;
+}
+
+.btn-review:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  border-color: #000000;
+}

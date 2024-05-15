@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="manifest" href="app.webmanifest">
+    <meta name="theme-color" content="#DB0000"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
+    <title>Restaurant Apps</title>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
+    <header>
+      <button class="navOpenBtn">
+        <i class="uil uil-bars"></i>
+      </button>
+      <nav class="nav">
+
+        <picture class="nav-image">
+          <source media="(max-width: 100px)" srcset="./images/Navbar-small.jpg">
+          <img class="lazyload" src='./images/Navbar-large.jpg' 
+               alt="Navbar Image">
+        </picture>
+    
+        <ul class="nav-links">
+          <button class="navCloseBtn">
+            <i class="uil uil-times"></i>
+          </button>
+          <li><a href="/">Home</a></li>
+          <li><a href="/#/favorite">Favorite</a></li>
+          <li><a href="https://www.linkedin.com/in/sinta-siti-nuriah-7678801a3/">About Us</a></li>
+        </ul>
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+        <form class="search-box" id="search-box">
+          <button class="uil uil-search search-icon" id="btn-search" type="submit"></button>
+          <input type="text" placeholder="Search here..." id="searchInput" />
+        </form>
+      </nav>
+    </header>        
+    <main id="main-content" tabindex="0"> 
+      <div class="hero">
+        <div class="hero-content">
+          <h1>Wilujeung Sumping di <i>Laris Resto</i></h1>
+          <p>Beli makanan yang bisa dimakan, bukan dijadiin kenangan kaya mantan. Pokoknya yang penting kenyang</p>
+          <a href="#restaurants-container" class="btn">Get Started</a>
+        </div>
+        <picture>
+          <source srcset="./images/hero-image_2-small.jpg">
+          <img id="hero-img" class="lazyload" src='./images/hero-image_2-large.jpg' 
+               alt="Hero Image">
+        </picture>
+        
+      </div>
+      <div class="container" id="restaurants-container">
+        <h1 class="header-content">Restaurant List</h1>
+        <div class="restaurant-list" id="restaurant-list">
+        </div>
+      </div>
+
+    </main>
+    <footer>
+      <div id="footerTools">
+        <button id="subscribePushNotification" class="btn-footer">Subscribe Push Notification</button>
+        <button id="unsubscribePushNotification" class="btn-footer">Unsubscribe Push Notification</button>
+      </div>
+      <footer-bar></footer-bar>
+    </footer>
+  </body>
+ </html>
